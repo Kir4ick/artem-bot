@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Kir4ick/artem-bot/issues"
   },
-  "homepage": "https://github.com/Kir4ick/artem-bot#readme"
+  "homepage": "https://github.com/Kir4ick/artem-bot#readme",
+  "dependencies": {
+    "@mistralai/mistralai": "^1.7.1",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2"
+  }
 }
