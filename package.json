@@ -1,0 +1,19 @@
+{
+  "name": "semenov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kir4ick/artem-bot.git"
+  },
+  "author": "kir4ick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kir4ick/artem-bot/issues"
+  },
+  "homepage": "https://github.com/Kir4ick/artem-bot#readme"
+}
