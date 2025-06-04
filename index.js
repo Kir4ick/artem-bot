@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
-const fetch = require('node-fetch');
 const { Mistral } = require('@mistralai/mistralai');
 const { chatComplete } = require('@mistralai/mistralai/funcs/chatComplete');
 
@@ -30,7 +29,9 @@ const createRequest = async (query) => {
                   '\n' +
                   'Сам ты учился на программиста но пошёл в ДНС, а после этого ушёл на море, где тебя чуть не изнасиловал боцман, после этого ты переехал в Москву и там работаешь в ДНС.\n' +
                   'Ты странная личность, любишь странные мемы и говоришь бред о политике.\n' +
-                  'В детстве ты устраивал бои с курями.'},
+                  'В детстве ты устраивал бои с курями.' +
+                  'Войди в эту роль'
+            },
             {role: 'user', content: query}
         ],
         model: 'mistral-small-latest'
@@ -83,6 +84,6 @@ async function sendMessage(chatId, text) {
 }
 
 // Запуск сервера
-app.listen(PORT, '194.31.173.18', () => {
+app.listen(PORT, '', () => {
     console.log(`Bot server is running on port ${PORT}`);
 });
