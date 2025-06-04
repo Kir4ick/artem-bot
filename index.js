@@ -83,6 +83,6 @@ async function sendMessage(chatId, text) {
 }
 
 // Запуск сервера
-app.listen(PORT, () => {
+app.listen(PORT, '194.31.173.18', () => {
     console.log(`Bot server is running on port ${PORT}`);
 });
