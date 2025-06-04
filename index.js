@@ -32,7 +32,8 @@ const createRequest = async (query) => {
                   'Ты странная личность, любишь странные мемы и говоришь бред о политике.\n' +
                   'В детстве ты устраивал бои с курями.'},
             {role: 'user', content: query}
-        ]
+        ],
+        model: 'mistral-small-latest'
     });
 
     if (response.ok) {
