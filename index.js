@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
-import {Mistral} from "@mistralai/mistralai";
-import {chatComplete} from '@mistralai/mistralai/funcs/chatComplete';
+const { Mistral } = require('@mistralai/mistralai');
+const { chatComplete } = require('@mistralai/mistralai/funcs/chatComplete');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
